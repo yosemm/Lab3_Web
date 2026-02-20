@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.child {
+    flex: 1 1 200px;
+    min-width: none;
+}
+
+h1 {
+    color: var(--neoncyan_darkest)
+}
+
+.calm-dialogue {
+    background-color: var(--accent);
+}
+
+.battle-dialogue {
+    background-color: var(--light);
+}
+
+.options:hover {
+    font-style: italic;
+}
