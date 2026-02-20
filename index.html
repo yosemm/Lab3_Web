@@ -2,29 +2,35 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="css/styles.css">
     <title>Una nueva aventura inicia...</title>
 </head>
 
 <body>
     <section>
-        <center>
-            <h1>¡Bienvenido entrenador!</h1>
-            <h2>Una nueva aventura está por empezar...</h2>
-            <p>Gracias por visitar el laboratorio del Profesor Oak. Él está entusiasmado de conocer a un nuevo futuro
-                entrenador. Puedes encontrarlo al fondo de la habitación.</p>
-            <img src="https://www.teechu.com/wp-content/uploads/2018/08/pokemon-professor-oak-facts-trivia.jpg"
-                width="340px">
-            <p>¿Te gustaría hablar con él?</p>
-        </center>
+        <h1>¡Bienvenido entrenador!</h1>
+        <h2>Una nueva aventura está por empezar...</h2>
+        <div class="container">
+            <div class="child calm-dialogue">
+                <p>Gracias por visitar el laboratorio del Profesor Oak. Él está entusiasmado de conocer a un nuevo
+                    futuro
+                    entrenador. Puedes encontrarlo al fondo de la habitación.</p>
+                <img src="./assets/images/intro_laboratory.jpg" width="340px">
+                <p>¿Te gustaría hablar con él?</p>
+            </div>
+        </div>
     </section>
     <footer>
         <center>
             <table>
                 <tbody>
                     <tr>
-                        <td><a href="empecemos.html">Por supuesto</a></td>
-                        <td></td>
-                        <td><a href="salir.html">Mejor vámonos</a></td>
+                        <td>
+                            <div class="button"><a href="empecemos.html" class="options"> Por supuesto</a></div>
+                        </td>
+                        <td>
+                            <div class="button"><a href="salir.html" class="options">Mejor vámonos</a></div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
