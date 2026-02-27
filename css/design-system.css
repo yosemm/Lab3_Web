@@ -1,5 +1,7 @@
 /* Mi historia es de ciencia ficcion inspirada en pokemon, que utiliza muchos rojos y azules */
 
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
 :root {
     --primary: #337084;
     --secondary: #de583b;
@@ -12,4 +14,3 @@
     --neoncyan_darker: #46a4a2;
     --neoncyan_darkest: #3a506b;
 }
-

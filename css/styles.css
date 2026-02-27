@@ -1,5 +1,17 @@
 @import url("design-system.css");
 
+
+body {
+    background-image: url("https://m.media-amazon.com/images/I/61lqRxbsC5L._AC_UF894,1000_QL80_.jpg");
+    background-color: rgb(234, 229, 224);
+    background-repeat: repeat;
+    background-size: 150px;
+    background-blend-mode: lighten;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -19,12 +31,14 @@
 h1 {
     color: var(--neoncyan_darkest);
     text-align: center;
+    background-color: white;
 }
 
 h2 {
     color: var(--neoncyan_darker);
     text-align: center;
     font-style: oblique;
+    background-color: white;
 }
 
 .calm-dialogue {
@@ -37,7 +51,7 @@ h2 {
 
 .calm-dialogue,
 .battle-dialogue {
-    border-radius: 5rem;
+    border-radius: 2rem;
     padding: 2rem 1rem 2rem 1rem;
     margin-bottom: 1rem;
 }
@@ -56,4 +70,10 @@ h2 {
 
 .button:hover {
     background-color: var(--neongreen_darker);
+}
+
+img {
+    box-shadow: 0px 0px 5px 4px rgb(187, 175, 156);
+    padding: 0.4rem;
+    margin: 0.4rem;
 }
