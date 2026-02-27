@@ -6,12 +6,12 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 2rem;
 
 }
 
 .child {
-    flex: 1 1 200px;
+    flex: 1 1 10rem;
     min-width: none;
     text-align: center;
 }
@@ -24,6 +24,7 @@ h1 {
 h2 {
     color: var(--neoncyan_darker);
     text-align: center;
+    font-style: oblique;
 }
 
 .calm-dialogue {
@@ -36,15 +37,15 @@ h2 {
 
 .calm-dialogue,
 .battle-dialogue {
-    border-radius: 50px;
-    padding: 5px 20px 5px 20px;
-    margin-bottom: 20px;
+    border-radius: 5rem;
+    padding: 2rem 1rem 2rem 1rem;
+    margin-bottom: 1rem;
 }
 
 .button {
     background-color: var(--neoncyan_darkest);
-    border-radius: 50px;
-    padding: 10px;
+    border-radius: 5rem;
+    padding: 1rem;
 }
 
 .button a {
