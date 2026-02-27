@@ -72,8 +72,28 @@ h2 {
     background-color: var(--neongreen_darker);
 }
 
-img {
+.calm-dialogue img,
+.battle-dialogue img {
     box-shadow: 0px 0px 5px 4px rgb(187, 175, 156);
     padding: 0.4rem;
     margin: 0.4rem;
+}
+
+.choosepoke>* {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 7rem;
+}
+
+.pokepick {
+    padding: 0.4rem;
+}
+
+.button.choosepoke {
+    background-color: var(--neoncyan_lightest);
+}
+
+.button.choosepoke a {
+    color: var(--neoncyan_darkest);
 }
