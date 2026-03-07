@@ -1,4 +1,4 @@
-@import url("design-system.css");
+@import url("story-theme.css");
 @import url("animations.css");
 
 body {
@@ -7,7 +7,7 @@ body {
     background-repeat: repeat;
     background-size: 150px;
     background-blend-mode: lighten;
-    font-family: "Google Sans", sans-serif;
+    font-family: var(--font-general);
     font-optical-sizing: auto;
     font-weight: 500;
     font-size: 1.15rem;
@@ -33,7 +33,7 @@ h1 {
     color: var(--neoncyan_darkest);
     text-align: center;
     background-color: white;
-    animation: glow 4s infinite;
+    animation: glow var(--transition-glow) infinite;
 }
 
 h2 {
@@ -61,7 +61,7 @@ h2 {
     border-radius: 2rem;
     padding: 2rem 1rem 2rem 1rem;
     margin-bottom: 1rem;
-    animation: new-dialogue 300ms ease-in both;
+    animation: new-dialogue var(--transition-medium) ease-in both;
 }
 
 .button {
@@ -82,6 +82,7 @@ h2 {
     box-shadow: 0rem 0rem 0.5rem 0.5rem var(--neoncyan_lightest);
     padding: 0.4rem;
     margin: 0.4rem;
+    animation: shadow var(--transition-long) ease-in-out infinite;
 }
 
 .choosepoke>* {

@@ -1,0 +1,31 @@
+/* Mi historia es de ciencia ficcion inspirada en pokemon, que utiliza muchos tonos rojos, verdes y azules */
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+:root {
+    /* Paleta de colores */
+    --primary: #337084;
+    --secondary: #edceaf;
+    --accent: #faebe0;
+    --text: #313129;
+    --neongreen: #70e000;
+    --neongreen_darker: #38b000;
+    --neoncyan_lightest: #d8f4ee;
+    --neoncyan_darker: #46a4a2;
+    --neoncyan_darkest: #3a506b;
+
+    /* Tipografia */
+    --font-general: "Google Sans", sans-serif;
+
+    /* Estados de la narrativa */
+    --good-dialogue: #f1e2c7;
+    --battle-dialogue: #c0e9e2;
+    --ending-dialogue: rgb(230, 203, 230);
+
+    /* Tiempos de la animacion */
+    --transition-quick: 100ms;
+    --transition-short: 120ms;
+    --transition-medium: 300ms;
+    --transition-long: 1000ms;
+    --transition-glow: 4s;
+}

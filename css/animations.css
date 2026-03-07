@@ -1,18 +1,20 @@
+@import url(story-theme.css);
+
 .button:hover {
     background-color: var(--neongreen_darker);
-    transition: background-color 120ms ease, transform 100ms ease;
+    transition: background-color var(--transition-short) ease, transform var(--transition-quick) ease;
 }
 
 .button:active {
     transform: translateY(2px);
     box-shadow: 0 3px 6px var(--neongreen_darkest);
     background-color: var(--neongreen_darker);
-    transition: background-color 120ms ease, transform 100ms ease;
+    transition: background-color var(--transition-short) ease, transform var(--transition-quick) ease;
 }
 
 .button a:focus-visible {
     background: var(--neoncyan_darker);
-    transition: background-color 120ms ease, transform 100ms ease;
+    transition: background-color var(--transition-short) ease, transform var(--transition-quick) ease;
 }
 
 .button.choosepoke:hover {
@@ -21,7 +23,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1rem;
-    transition: border-radius 120ms ease, transform 100ms ease;
+    transition: border-radius var(--transition-short) ease, transform var(--transition-quick) ease;
 }
 
 
@@ -44,5 +46,19 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0.5rem 0.5rem var(--neoncyan_lightest);
+    }
+
+    50% {
+        box-shadow: 0 0 0.5rem 0.5rem var(--accent);
+    }
+
+    100% {
+        box-shadow: 0 0 0.5rem 0.5rem var(--neoncyan_lightest);
     }
 }
