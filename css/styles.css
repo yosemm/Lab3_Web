@@ -1,5 +1,5 @@
 @import url("design-system.css");
-
+@import url("animations.css");
 
 body {
     background-image: url("https://m.media-amazon.com/images/I/61lqRxbsC5L._AC_UF894,1000_QL80_.jpg");
@@ -10,6 +10,7 @@ body {
     font-family: "Google Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
+    font-size: 1.15rem;
 }
 
 .container {
@@ -32,6 +33,7 @@ h1 {
     color: var(--neoncyan_darkest);
     text-align: center;
     background-color: white;
+    animation: glow 4s infinite;
 }
 
 h2 {
@@ -42,18 +44,24 @@ h2 {
 }
 
 .calm-dialogue {
-    background-color: var(--light);
+    background-color: var(--good-dialogue);
 }
 
 .battle-dialogue {
-    background-color: var(--neoncyan);
+    background-color: var(--battle-dialogue);
+}
+
+.ending-dialogue {
+    background-color: var(--ending-dialogue);
 }
 
 .calm-dialogue,
-.battle-dialogue {
+.battle-dialogue,
+.ending-dialogue {
     border-radius: 2rem;
     padding: 2rem 1rem 2rem 1rem;
     margin-bottom: 1rem;
+    animation: new-dialogue 300ms ease-in both;
 }
 
 .button {
@@ -68,13 +76,10 @@ h2 {
 
 }
 
-.button:hover {
-    background-color: var(--neongreen_darker);
-}
-
 .calm-dialogue img,
-.battle-dialogue img {
-    box-shadow: 0px 0px 5px 4px rgb(187, 175, 156);
+.battle-dialogue img,
+.ending-dialogue img {
+    box-shadow: 0rem 0rem 0.5rem 0.5rem var(--neoncyan_lightest);
     padding: 0.4rem;
     margin: 0.4rem;
 }

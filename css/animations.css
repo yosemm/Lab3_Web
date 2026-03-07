@@ -1,0 +1,48 @@
+.button:hover {
+    background-color: var(--neongreen_darker);
+    transition: background-color 120ms ease, transform 100ms ease;
+}
+
+.button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 6px var(--neongreen_darkest);
+    background-color: var(--neongreen_darker);
+    transition: background-color 120ms ease, transform 100ms ease;
+}
+
+.button a:focus-visible {
+    background: var(--neoncyan_darker);
+    transition: background-color 120ms ease, transform 100ms ease;
+}
+
+.button.choosepoke:hover {
+    background-color: var(--accent);
+    background-image: url("https://cdn.wallpapersafari.com/31/99/VWh3CL.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    transition: border-radius 120ms ease, transform 100ms ease;
+}
+
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 0.2rem var(--secondary), 0 0 0.4rem var(--secondary), 0 0 0.7rem var(--secondary), 0 0 2.2rem var(--secondary), 0 0 2rem var(--secondary);
+    }
+
+    100% {
+        text-shadow: 0 0 0.4rem var(--neoncyan_lightest), 0 0 0.7rem var(--neoncyan_lightest), 0 0 2.2rem var(--neoncyan_lightest), 0 0 2rem var(--neoncyan_lightest), 0 0 5rem var(--neoncyan_lightest);
+    }
+}
+
+@keyframes new-dialogue {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
